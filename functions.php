@@ -512,3 +512,6 @@ new Epsilon_Framework( $epsilon_framework_settings );
 
 //Include Welcome Screen
 require get_template_directory() . '/inc/welcome-screen/welcome-page-setup.php';
+
+// Enable shortcodes in text widgets
+add_filter('widget_text','do_shortcode');
